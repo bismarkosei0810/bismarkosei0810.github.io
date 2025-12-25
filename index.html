@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bismark Osei-Bonsu | AI & Data Science</title>
+  <meta name="description" content="Bismark Osei-Bonsu — Computer Science student (AI concentration). Data Science + ML projects." />
+
+  <!-- Optional social preview (put assets/og-image.png if you want) -->
+  <meta property="og:title" content="Bismark Osei-Bonsu | AI & Data Science" />
+  <meta property="og:description" content="Computer Science student (AI concentration). Data Science + ML projects." />
+  <meta property="og:image" content="assets/og-image.png" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="container headerInner">
+      <a class="logo" href="#top" aria-label="Home">
+        <span class="logoMark">B</span>
+        <span class="logoText">Bismark</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="iconBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span class="iconBtnBar"></span>
+        <span class="iconBtnBar"></span>
+        <span class="iconBtnBar"></span>
+      </button>
+    </div>
+
+    <div class="container mobileNav" id="mobileNav" hidden>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+
+      <div class="container heroGrid">
+        <div class="heroLeft">
+          <div class="badgeRow">
+            <span class="badge">Computer Science</span>
+            <span class="badge">AI Concentration</span>
+            <span class="badge">Data Science</span>
+          </div>
+
+          <h1 class="headline">
+            Bismark Osei-Bonsu
+          </h1>
+
+          <p class="subhead">
+            I’m a Computer Science student focused on Artificial Intelligence and Data Science.
+            I build clean, practical ML projects and explain results in a way people can use.
+          </p>
+
+          <div class="ctaRow">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="#contact">Contact</a>
+            <a class="btn ghost" href="resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+          </div>
+
+          <div class="metaRow">
+            <a class="metaLink" href="mailto:bismarkosei0810@gmail.com">bismarkosei0810@gmail.com</a>
+            <span class="dot">•</span>
+            <a class="metaLink" href="tel:+13126871722">+1 (312) 687-1722</a>
+          </div>
+
+          <div class="socialRow" aria-label="Social links">
+            <a class="pillLink" href="https://github.com/bismarkosei0810" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="pillLink" href="https://www.linkedin.com/in/bismark-osei-bonsu-98245137b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2BwJa1kWmRiuY7ZKz%2BVXj7Q%3D%3D" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <aside class="heroRight">
+          <div class="profileCard">
+            <div class="profileTop">
+              <div class="avatarWrap">
+                <img
+                  class="avatar"
+                  src="assets/bismark.jpg"
+                  alt="Portrait of Bismark Osei-Bonsu"
+                  onerror="this.style.display='none'; document.getElementById('avatarFallback').hidden=false;"
+                />
+                <div id="avatarFallback" class="avatarFallback" hidden>
+                  <div class="initials">BO</div>
+                  <p class="fallbackText">Add your photo at <span class="mono">assets/bismark.jpg</span></p>
+                </div>
+              </div>
+
+              <div class="profileInfo">
+                <p class="profileName">Bismark Osei-Bonsu</p>
+                <p class="profileRole">AI • Data Science • ML</p>
+
+                <div class="miniGrid">
+                  <div class="mini">
+                    <span class="miniLabel">Focus</span>
+                    <span class="miniValue">Applied ML</span>
+                  </div>
+                  <div class="mini">
+                    <span class="miniLabel">Open to</span>
+                    <span class="miniValue">Internships</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="profileBottom">
+              <p class="muted">
+                Clean projects, solid evaluation, and clear communication. That’s what I’m building.
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Projects</h2>
+          <p>One strong project is better than ten weak ones. Add more only when they match this quality.</p>
+        </div>
+
+        <div class="projectGrid">
+          <article class="card projectCard">
+            <div class="projectMedia">
+              <!-- Optional image: add assets/titanic.png -->
+              <img
+                src="assets/titanic.png"
+                alt="Titanic project preview"
+                class="projectImg"
+                onerror="this.remove(); document.getElementById('titanicFallback').hidden=false;"
+              />
+              <div id="titanicFallback" class="projectFallback" hidden>
+                <span class="projectFallbackTitle">Titanic Survival Prediction</span>
+                <span class="projectFallbackHint">Add an image at assets/titanic.png (optional)</span>
+              </div>
+            </div>
+
+            <div class="projectBody">
+              <div class="cardTop">
+                <h3>Titanic Survival Prediction</h3>
+                <span class="tag">Machine Learning</span>
+              </div>
+
+              <p class="muted">
+                Built a supervised ML pipeline to predict passenger survival using structured data.
+                Focused on data cleaning, feature engineering, and model evaluation.
+              </p>
+
+              <ul class="bullets">
+                <li>Handled missing values and engineered features (e.g., family size, titles).</li>
+                <li>Trained baseline models and improved performance via tuning and validation.</li>
+                <li>Reported results using confusion matrix and precision/recall/F1.</li>
+              </ul>
+
+              <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">Pandas</span>
+                <span class="chip">NumPy</span>
+                <span class="chip">scikit-learn</span>
+                <span class="chip">Matplotlib</span>
+              </div>
+
+              <div class="actions">
+                <!-- Replace with your specific Titanic repo later -->
+                <a class="btn small" href="https://github.com/bismarkosei0810" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="btn small ghost" href="#contact">Request Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card addCard">
+            <h3>Add your next 2 projects</h3>
+            <p class="muted">
+              Best next moves for AI/Data: sentiment analysis (NLP), a dashboard, and a small model served via API.
+            </p>
+            <div class="chips">
+              <span class="chip">NLP</span>
+              <span class="chip">SQL</span>
+              <span class="chip">APIs</span>
+              <span class="chip">Deployment basics</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Skills</h2>
+          <p>Only list what you can defend in an interview.</p>
+        </div>
+
+        <div class="skillGrid">
+          <div class="card">
+            <h3>Core</h3>
+            <div class="chips">
+              <span class="chip">Python</span>
+              <span class="chip">Pandas</span>
+              <span class="chip">NumPy</span>
+              <span class="chip">scikit-learn</span>
+              <span class="chip">Git/GitHub</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Data</h3>
+            <div class="chips">
+              <span class="chip">Data Cleaning</span>
+              <span class="chip">Feature Engineering</span>
+              <span class="chip">Model Evaluation</span>
+              <span class="chip">Visualization</span>
+              <span class="chip">SQL (Basics)</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>AI Interests</h3>
+            <div class="chips">
+              <span class="chip">Supervised Learning</span>
+              <span class="chip">Classification</span>
+              <span class="chip">Metrics</span>
+              <span class="chip">Responsible AI basics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>About</h2>
+          <p>Short, clear, professional.</p>
+        </div>
+
+        <div class="aboutGrid">
+          <div class="card">
+            <h3>Profile</h3>
+            <p class="muted">
+              I’m a Computer Science student concentrating in Artificial Intelligence, with a strong interest in Data Science.
+              I enjoy working with real datasets, building models, and communicating results clearly.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>What I’m aiming for</h3>
+            <ul class="bullets">
+              <li>Internships or entry-level roles in AI, Data Science, or ML Engineering.</li>
+              <li>Projects with measurable outcomes and clean, documented workflows.</li>
+              <li>Teams that value fundamentals, clarity, and continuous learning.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Contact</h2>
+          <p>Make it easy for people to reach you.</p>
+        </div>
+
+        <div class="contactGrid">
+          <div class="card">
+            <h3>Send a message</h3>
+            <form id="contactForm">
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+
+              <label>
+                Message
+                <textarea name="message" rows="5" placeholder="What would you like to discuss?" required></textarea>
+              </label>
+
+              <button class="btn primary" type="submit">Email Me</button>
+              <p class="hint">This opens your email app. No backend required for GitHub Pages.</p>
+            </form>
+          </div>
+
+          <div class="card">
+            <h3>Details</h3>
+            <p class="muted"><strong>Email:</strong> <a href="mailto:bismarkosei0810@gmail.com">bismarkosei0810@gmail.com</a></p>
+            <p class="muted"><strong>Phone:</strong> <a href="tel:+13126871722">+1 (312) 687-1722</a></p>
+            <p class="muted"><strong>GitHub:</strong> <a href="https://github.com/bismarkosei0810" target="_blank" rel="noreferrer">github.com/bismarkosei0810</a></p>
+            <p class="muted"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/bismark-osei-bonsu-98245137b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2BwJa1kWmRiuY7ZKz%2BVXj7Q%3D%3D" target="_blank" rel="noreferrer">linkedin.com/in/bismark-osei-bonsu</a></p>
+
+            <div class="divider"></div>
+
+            <p class="muted small">
+              If you want this to look elite: add a dedicated repo for Titanic with a clean README + screenshots.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footerInner">
+        <p>© <span id="year"></span> Bismark Osei-Bonsu</p>
+        <div class="footerLinks">
+          <a href="https://github.com/bismarkosei0810" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/bismark-osei-bonsu-98245137b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2BwJa1kWmRiuY7ZKz%2BVXj7Q%3D%3D" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:bismarkosei0810@gmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
