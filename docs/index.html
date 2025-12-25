@@ -90,20 +90,30 @@
           <div class="profileCard">
             <div class="profileTop">
               <div class="avatarWrap">
-                <img
-                  class="avatar"
-                  src="pic/bismark.jpg"
-                  alt="Portrait of Bismark Osei-Bonsu"
-                  onerror="this.style.display='none'; document.getElementById('avatarFallback').hidden=false;"
-                />
-                <div id="avatarFallback" class="avatarFallback" hidden>
-                  <div class="initials">BOB</div>
-                  <img
-                  class="avatar"
-                  src="pic/bismarks.jpg"
-                  <p class="fallbackText">Add your photo at <span class="mono">pic/bismarks.jpg</span></p>
-                </div>
-              </div>
+               <img
+  class="avatar"
+  src="pic/bismark.jpg"
+  alt="Portrait of Bismark Osei-Bonsu"
+  onerror="
+    this.style.display='none';
+    document.getElementById('avatarFallback').hidden = false;
+  "
+/>
+
+<div id="avatarFallback" class="avatarFallback" hidden>
+  <div class="initials">BOB</div>
+
+  <img
+    class="avatar"
+    src="pic/bismarks.jpg"
+    alt="Alternate portrait of Bismark Osei-Bonsu"
+  />
+
+  <p class="fallbackText">
+    Add your photo at <span class="mono">pic/bismarks.jpg</span>
+  </p>
+</div>
+
 
               <div class="profileInfo">
                 <p class="profileName">Bismark Osei-Bonsu</p>
